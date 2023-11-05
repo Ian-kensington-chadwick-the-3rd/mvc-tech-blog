@@ -5,7 +5,7 @@ const PostData = [
         title: 'title',
         description: 'description',
         date: '12/12/23',
-        user_id: 1,
+        
     }
 ]
 
