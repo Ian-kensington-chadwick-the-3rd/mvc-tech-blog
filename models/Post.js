@@ -20,11 +20,15 @@ Post.init(
             allowNull: false,
         },
         date:{
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: false
         },
         user_id:{
-          model: 'user',
+            type: DataTypes.INTEGER,
+            refernces:{
+                model: 'user',
+                key: 'id'
+            }
           
         }
     },
