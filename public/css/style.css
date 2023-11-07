@@ -1,3 +1,17 @@
 body {
     color: red;
 }
+
+/* Apply basic styling to the header */
+header {
+    background-color: #5f2a2a; /* Background color of the header */
+    color: #fff; /* Text color */
+    padding: 10px 0; /* Padding around the content inside the header */
+  }
+  
+  /* Style the logo or site title */
+  .header-logo {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold;
+  }
+  

@@ -1,6 +1,35 @@
-<section class="card">
- 
-    <header>{{}}</header>
-    <p>{{description}}</p>
-    <p>{{date}}</p>
+<style>
+    .post {
+        width: 50%;
+        margin: 5vh auto;
+        border: 2px solid #000;
+        border-radius: 12px;
+        padding: 10px;
+    }
+
+    .post > * {
+        width: 100%;
+        margin: 5px;
+        
+    }
+
+    .font-size{
+        font-size: 35px;
+        justify-content: center;
+    }
+    .font-size-desc{
+        font-size: 20px;
+          justify-content: center;
+    }
+</style>
+
+
+<section class="post">
+    <p class="font-size-desc">{{createdAt}}</p>
+    <header class="font-size">{{title}}</header>
+    <p class="font-size-desc">{{description}}</p>
+    <p>{{username}}</p>
+   
 </section>
+
+<script src="./js/post.js"></script>

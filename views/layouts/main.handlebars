@@ -1,29 +1,34 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> </title>
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <title>mvc-tech-blog</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<header>
-  <h1>tech-blog-dashboard</h1>
-</header>
-<nav>
-  <a href="/">Home</a>
-  <a href="/">dashboard</a>
-    {{#if loggedIn}}
+<body> 
+  <header>
+   <a href="/">home</a>
+   <a href="/dashboard">dashboard</a>
+   {{#if loggedIn}}
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
     <a href="/login">Login</a>
     {{/if}}
-  
-</nav>
-<body>
- {{{body}}}
- <p>main body</p>
+ 
+   <h1>Projects</h1>
+  </header>
+  <main>
+    {{{ body }}}
+  </main>
+  <footer>
+      
+  </footer>
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
 
-</html>  
+</html>
