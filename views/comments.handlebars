@@ -1,0 +1,29 @@
+
+<style>
+    .post {
+        width: 50%;
+        margin: 5vh auto;
+        border: 2px solid #000;
+        border-radius: 12px;
+        padding: 10px;
+    }
+
+    .post > * {
+        width: 100%;
+        margin: 5px;
+    }
+</style>
+
+<div class="post">
+    <label for="title">Title</label>
+    <div><input id="title" type="text" placeholder="title"></div>
+    <label for="body">Body</label>
+    <div><input id="body" type="text" placeholder="body"></div>
+    <button id="submit">submit</button>
+</div>
+   
+
+
+{{#each commentsData as |comments|}}
+{{> comments-handle}}
+{{/each}}

@@ -3,7 +3,7 @@ const loginFormHandler = async (event) => {
   
     const title = document.querySelector('#title').value.trim();
     const description = document.querySelector('#body').value.trim();
-  console.log(title, description)
+    console.log(title, description)
     if (title && description) { 
         
       const response = await fetch('/api/posts', {

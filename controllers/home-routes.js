@@ -68,6 +68,29 @@ router.get('/login', areAuth, (req, res) => {
     res.render('login');
   });
 
+  // router.get('/comments', withAuth, async (req, res) => {
+  //   try {
+  //       const dbCommentsData = await Comments.findAll({
+  //         where:{
+  //           post_id: req.session.post_id
+  //         }
+  //       });
+  //       // console.log("dbPostData: ", dbPostsData);
+  //       const commentsData = dbCommentsData.map((post)=> post.dataValues);
+        
+  
+  //       console.log("postData: ", postsData);
+  //       res.render('comments', {
+  //           commentsData,
+            
+  //           loggedIn: req.session.loggedIn,});
+  
+  //   } catch (err) {
+  //       console.log(err);
+  //       res.status.json(err);
+  //   }
+  // }); 
+
   // router.post('/posts', async (req,res) => {
   //   try {
   //      const PostData = await Post.create({
