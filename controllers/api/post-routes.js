@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post } = require('../../models');
+const { Post, Comments } = require('../../models');
 
 router.post('/', async (req,res) => {
 //  try {
@@ -15,5 +15,19 @@ router.post('/', async (req,res) => {
 // res.status(400).json(err)
 //  }
 });
+
+router.post('/comments', async (req,res) => {
+   
+        const commentsData = await Comments.create({
+            description: req.body.description,
+             post_id: req.body.post_id,
+        })
+       
+        res.status(200).json(commentsData)
+        
+   
+    });
+
+
 
 module.exports = router

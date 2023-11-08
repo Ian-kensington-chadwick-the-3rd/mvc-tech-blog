@@ -23,20 +23,23 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: true
         },
-        user_id:{
-            type: DataTypes.INTEGER,
-            refernces:{
-                model: 'user',
-                key: 'id'
-            }
-          
-        }
+       
     },
     {
         sequelize,
         freezeTableName: true,
         underscored: true,
-        modelName: 'post',
+        modelName: 'Post',
      }
 );
-module.exports = Post
+module.exports = Post 
+
+
+// user_id:{
+        //     type: DataTypes.INTEGER,
+        //     refernces:{
+        //         model: 'user',
+        //         key: 'id'
+        //     }
+          
+        // }

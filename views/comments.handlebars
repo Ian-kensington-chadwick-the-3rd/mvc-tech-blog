@@ -15,11 +15,9 @@
 </style>
 
 <div class="post">
-    <label for="title">Title</label>
-    <div><input id="title" type="text" placeholder="title"></div>
     <label for="body">Body</label>
     <div><input id="body" type="text" placeholder="body"></div>
-    <button id="submit">submit</button>
+    <button value={{post_id}} id="submit">submit</button>
 </div>
    
 
@@ -27,3 +25,5 @@
 {{#each commentsData as |comments|}}
 {{> comments-handle}}
 {{/each}}
+
+<script src="/js/comments.js"></script>
