@@ -18,4 +18,32 @@ header {
 header a {
   text-decoration: none;
   color: #fff;
+  font-size: 30px;
+  margin: 10px 20px;
+}
+
+a.removeline  {
+  text-decoration: none;
+  color: #000;
+}
+
+input {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.headerC {
+  background-color: #5f2a2a;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.my-element:hover {
+  background-color: #e74c3c; /* Hover background color */
+  color: #ffffff; /* Hover text color */
 }

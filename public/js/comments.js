@@ -16,7 +16,7 @@ const FormHandler = async (event) => {
       });
      
       if (response.ok) {
-        //  document.location.replace('/dashboard');
+          document.location.replace(`/comments/${post_id}`);
         console.log(response)
         res.status(200).json()
       } else {
